@@ -17,10 +17,16 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # General configuration
+activate :directory_indexes
 
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+end
+
+activate :autoprefixer do |config|
+  config.browsers = ['last 7 versions', 'Explorer >= 9']
+  config.ignore   = ['/stylesheets/hacks.css']
 end
 
 ###
@@ -34,11 +40,26 @@ end
 #   end
 # end
 
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
+set :fonts_dir, 'fonts'
+
+set :markdown_engine, :redcarpet
+set :markdown,
+  :layout_engine => :erb,
+  :autolink => true,
+  :fenced_code_blocks => true,
+  :strikethrough => true,
+  :tables => true,
+  :smartypants => true
+
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
+  activate :gzip
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 end
