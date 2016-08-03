@@ -1,0 +1,12 @@
+/opt/rubies/2.2.0/bin/ruby -r ./siteconf20160802-1630-1423ff.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20160802-1630-1lt4nxo
