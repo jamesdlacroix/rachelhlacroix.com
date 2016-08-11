@@ -1,9 +1,0 @@
-/opt/rubies/2.2.0/bin/ruby -r ./siteconf20160802-1631-1na3w19.rb extconf.rb 
-creating Makefile
-
-make "DESTDIR=" clean
-
-make "DESTDIR="
-make: Nothing to be done for `all'.
-
-make "DESTDIR=" install
