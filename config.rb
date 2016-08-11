@@ -61,6 +61,11 @@ set :markdown,
   :tables => true,
   :smartypants => true
 
+# Deploy
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+end
+
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
