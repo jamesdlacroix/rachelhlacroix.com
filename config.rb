@@ -45,6 +45,13 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :fonts_dir, 'fonts'
 
+set :helpers_dir, "helpers"
+set :helpers_filename_glob, "**/*_helper.rb"
+set :helpers_filename_to_module_name_proc, Proc.new { |filename|
+  basename = File.basename(filename, File.extname(filename))
+  basename.camelcase
+}
+
 set :markdown_engine, :redcarpet
 set :markdown,
   :layout_engine => :erb,
@@ -58,6 +65,9 @@ set :markdown,
 configure :build do
   # Minify CSS on build
   activate :minify_css
+  # :ignore => ['fonts', 'stylesheets/cloud'],
+  # :inline => true
+
   activate :gzip
 
   # Minify Javascript on build

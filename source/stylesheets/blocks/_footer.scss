@@ -1,0 +1,32 @@
+.Footer {
+  background: $off-white;
+  padding: 3rem $page-gutter;
+  margin: 0 $page-gutter $page-gutter;
+  text-align: center;
+
+  a,
+  a:visited {
+    color: $grey-light;
+    font-family: $typeface-sans;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    color: $pink;
+  }
+
+  a:active {
+    color: $pink-60;
+  }
+
+  .Footer__icon {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+  } // .Footer__icon
+
+  .Footer__text {
+    font-size: 0.875rem;
+  } // .Footer__icon
+}

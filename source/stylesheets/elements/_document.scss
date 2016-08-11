@@ -1,0 +1,23 @@
+// Document
+
+html {
+  font-size: 100%;
+}
+
+body {
+  position: relative;
+  background: $white;
+  color: $black;
+  font-family: $typeface-serif;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+
+  @include media($typography-breakpoint1) {
+    font-size: 112.5%;
+  }
+
+  @include media($typography-breakpoint2) {
+    font-size: 125%;
+  }
+} // body

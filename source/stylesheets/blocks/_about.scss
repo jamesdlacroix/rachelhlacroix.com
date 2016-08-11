@@ -1,0 +1,64 @@
+.About {
+  background: $off-white;
+  padding: 3rem $page-gutter;
+  margin: $page-gutter;
+
+  h1,
+  h4 {
+    text-align: center;
+  }
+
+  h4 {
+    font-family: $typeface-serif;
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  .About__content {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+  }
+
+  .About__photo {
+    margin: auto;
+    max-width: 15rem;
+
+    img {
+      border-radius: 100%;
+      border: 4px solid $white;
+      box-shadow: 0 2px 4px rgba($black, 0.125);
+    }
+  }
+
+  .About__social {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+
+     li {
+       display: inline-block;
+       margin-left: 0.5rem;
+
+       &:first-of-type {
+         margin-left: 0;
+       }
+     }
+
+     a,
+     a:visited {
+       color: $grey-light;
+       border-bottom: 0;
+       text-decoration: 0;
+     }
+
+     a:hover {
+       color: $pink;
+     }
+
+     a:active {
+       color: $pink-60;
+     }
+  } // .About__social
+
+} // .About

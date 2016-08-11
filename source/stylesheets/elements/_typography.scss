@@ -1,0 +1,82 @@
+// Typography
+
+p, a, h1, h2, h3, h4, h5, h6, label {
+  font-family: inherit;
+  line-height: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $typeface-sans;
+  text-rendering: optimizeLegibility;
+}
+
+$h1-font-size: 1.75rem;
+h1 {
+  margin:  $h1-font-size 0 $h1-font-size/2;
+  font-size: $h1-font-size;
+  font-weight: $bold-weight;
+  line-height: 1.125;
+  text-transform: uppercase;
+}
+
+$h2-font-size: 1.5rem;
+h2 {
+  margin: $h2-font-size 0 $h2-font-size/2;
+  font-size: $h2-font-size;
+  font-weight: $bold-weight;
+  line-height: 1.125;
+  text-transform: uppercase;
+  &.bold { font-weight: $bold-weight; }
+}
+
+$h3-font-size: 1.375rem;
+h3 {
+  margin: $h3-font-size 0 $h3-font-size/2 ;
+  font-size: $h3-font-size;
+  font-weight: $bold-weight;
+  line-height: 1.125;
+}
+
+$h4-font-size: 1.25rem;
+h4 {
+  margin: 0 0 0.5rem;
+  font-size: $h4-font-size;
+  font-weight: $bold-weight;
+  line-height: 1.25;
+}
+
+$h5-font-size: 1.125rem;
+h5 {
+  margin: 0 0 0.5rem;
+  font-size: $h5-font-size;
+  font-weight: $bold-weight;
+  line-height: 1.25;
+}
+
+$h6-font-size: 1rem;
+h6 {
+  margin: 0 0 0.5rem;
+  font-size: $h6-font-size;
+  font-weight: 400;
+  font-weight: $bold-weight;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 1rem;
+  line-height: 1.75;
+}
+
+strong {
+  font-weight: $bold-weight;
+}
+
+hr {
+  border-color: $off-white;
+}
+
+pre,
+code {
+  white-space: pre-wrap;
+}

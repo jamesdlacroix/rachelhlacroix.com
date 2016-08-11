@@ -1,13 +1,22 @@
 ---
-title: Welcome to Middleman
+title: Rachel LaCroix – Content Writer
 ---
 
-<div class="welcome">
-  <div class="logo">
-    <%= image_tag "middleman-logo.svg" %>
-  </div>
-  <h1>Middleman is Running</h1>
-  <p class="doc">
-    <%= link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<!-- About -->
+<%= partial "partials/home/about" %>
+
+
+<!-- Work -->
+<%= partial "partials/home/writing" %>
+
+<!-- Footer -->
+<div id="footer" class="Footer">
+  <a href="http://rachel.lacroix.io" target="_blank">
+    <div class="Footer__icon">
+      <%= icon 'e900' %>
+    </div>
+    <div class="Footer__text">
+      View R&eacute;sum&eacute;
+    </div>
+  </a>
+</div>
